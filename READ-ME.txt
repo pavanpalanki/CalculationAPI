@@ -1,3 +1,14 @@
+* Create a standard Amazon SQS with name "calculation-queue" and update the access-key and secret-key in application.yml in both services
+
+cloud:
+  aws:
+    region:
+      static: us-west-2
+      auto: false
+    credentials:
+      access-key: 
+      secret-key: 
+
 * Execute altran.sql file prior to running both calculation service
 
 * change the below DB properties in CalculationService application.yml inside resources
