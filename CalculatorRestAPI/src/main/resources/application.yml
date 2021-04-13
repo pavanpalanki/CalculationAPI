@@ -1,0 +1,11 @@
+server:
+  port: 8082
+   
+cloud:
+  aws:
+    region:
+      static: us-west-2
+      auto: false
+    credentials:
+      access-key: 
+      secret-key: 

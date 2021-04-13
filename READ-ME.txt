@@ -1,0 +1,43 @@
+* Execute altran.sql file prior to running both calculation service
+
+* change the below DB properties in CalculationService application.yml inside resources
+
+spring:
+  jpa:
+    hibernate:
+      ddl-auto: update
+  datasource:
+    url: jdbc:mysql://localhost:3306/altran?allowPublicKeyRetrieval=true&useSSL=false
+    username: pawan
+    password: pawan
+
+API:
+------------------------------------
+POST - localhost:8082/altran/send
+
+Body:
+
+{
+"operation":"ADD",
+"param1":25,
+"param2":5
+}
+
+{
+"operation":"SUBSTRACT",
+"param1":25,
+"param2":5
+}
+
+{
+"operation":"MULTIPLY",
+"param1":25,
+"param2":5
+}
+
+
+{
+"operation":"DIVIDE",
+"param1":25,
+"param2":5
+}
